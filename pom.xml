@@ -43,7 +43,8 @@
               <configuration>
                 <rules>
                   <requireMavenVersion>
-                    <version>3.9.4</version>
+                    <!-- that version is provided by actions/setup-java@v3 at the time of writing -->
+                    <version>3.8.8</version>
                   </requireMavenVersion>
                 </rules>    
               </configuration>
