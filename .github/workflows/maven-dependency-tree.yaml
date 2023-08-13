@@ -1,0 +1,27 @@
+name: Maven Dependency Submission
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  JDK_VERSION: '17'
+  JDK_DIST: 'temurin'
+      
+jobs:
+
+  submit:
+    name: Submit Maven Dependency Tree
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK ${{ env.JDK_DIST }} version ${{ env.JDK_VERSION }} and Maven cache
+        uses: actions/setup-java@v3
+        with:
+          java-version: ${{ env.JDK_VERSION }}
+          distribution: ${{ env.JDK_DIST }}
+          cache: 'maven'
+      - name: Submit Dependency Snapshot
+        uses: advanced-security/maven-dependency-submission-action@v3
