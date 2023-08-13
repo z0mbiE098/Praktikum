@@ -15,7 +15,7 @@ env:
 jobs:
 
   build:
-    name: Package with Maven
+    name: Build with Maven
     runs-on: ubuntu-latest
 
     steps:
@@ -26,5 +26,5 @@ jobs:
           java-version: ${{ env.JDK_VERSION }}
           distribution: ${{ env.JDK_DIST }}
           cache: 'maven'
-      - name: Execute Maven goal package
-        run: mvn --batch-mode --update-snapshots package
+      - name: Execute Maven goal verify
+        run: mvn --batch-mode --update-snapshots verify
