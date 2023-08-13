@@ -1,2 +1,3 @@
-# java-programming-template
-Template für Java-Übungen in Programmierung
+# Java Programming Template { SESQA }
+
+Template für Programmierung in Java von [Professor Martin Burger](https://sesqa.martin-burger.net).
