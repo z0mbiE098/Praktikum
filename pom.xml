@@ -21,8 +21,6 @@
           <name>Martin Burger</name>
           <email>martin.burger@htwsaar.de</email>
           <url>https://sesqa.martin-burger.net</url>
-          <organization>School of Engineering at htw saar</organization>
-          <organizationUrl>https://www.htwsaar.de/en/htw-saar/the-faculties/school-of-engineering</organizationUrl>
           <timezone>Europe/Berlin</timezone>
           <roles>
               <role>Professor</role>
@@ -31,8 +29,8 @@
   </developers>
 
   <organization>
-      <name>School of Engineering at htw saar</name>
-      <url>https://www.htwsaar.de/en/htw-saar/the-faculties/school-of-engineering</url>
+      <name>Professor Martin Burger</name>
+      <url>https://sesqa.martin-burger.net</url>
   </organization>
 
   <properties>
