@@ -1,9 +1,6 @@
 name: Java CI
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -11,15 +8,16 @@ on:
 env:
   JDK_VERSION: '17'
   JDK_DIST: 'temurin'
-      
+
 jobs:
 
-  build:
-    name: Build with Maven
+  build-site:
+    name: Build Maven site
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Set up JDK ${{ env.JDK_DIST }} version ${{ env.JDK_VERSION }} and Maven cache
         uses: actions/setup-java@v3
         with:
