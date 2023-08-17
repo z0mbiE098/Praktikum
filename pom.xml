@@ -12,8 +12,7 @@
   <version>0.1-SNAPSHOT</version>
 
   <packaging>jar</packaging>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://martinburger.github.io/sesqa-java-programming-template/</url>
   <inceptionYear>2023</inceptionYear>
 
   <developers>
