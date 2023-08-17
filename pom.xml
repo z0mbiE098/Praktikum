@@ -221,18 +221,48 @@
           <tagListOptions>
             <tagClasses>
               <tagClass>
-                <displayName>Todo Work</displayName>
+                <displayName>To do: Informal tasks/features that are pending completion</displayName>
                 <tags>
                   <tag>
                     <matchString>todo</matchString>
                     <matchType>ignoreCase</matchType>
                   </tag>
+                </tags>
+              </tagClass>
+              <tagClass>
+                <displayName>Fix me: Areas of problematic or ugly code needing refactoring or cleanup</displayName>
+                <tags>
                   <tag>
                     <matchString>fixme</matchString>
                     <matchType>ignoreCase</matchType>
                   </tag>
                   <tag>
                     <matchString>xxx</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>refactor</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>smell</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                </tags>
+              </tagClass>
+              <tagClass>
+                <displayName>Hacks: Temporary code to force inflexible functionality, or simply a test change, or workaround a known problem.</displayName>
+                <tags>
+                  <tag>
+                    <matchString>hack</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>clever</matchString>
+                    <matchType>ignoreCase</matchType>
+                  </tag>
+                  <tag>
+                    <matchString>magic</matchString>
                     <matchType>ignoreCase</matchType>
                   </tag>
                 </tags>
