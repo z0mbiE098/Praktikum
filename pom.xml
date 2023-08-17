@@ -140,12 +140,10 @@
 
   <reporting>
     <plugins>
-
       <!-- Maven Project Info Reports Plugin - http://maven.apache.org/plugins/maven-project-info-reports-plugin/ -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.5</version>
         <reportSets>
           <reportSet>
             <reports>
