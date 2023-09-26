@@ -64,7 +64,9 @@
               <configuration>
                 <rules>
                   <requireMavenVersion>
-                    <!-- that version is provided by actions/setup-java@v3 at the time of writing -->
+                    <!-- Note: That version is provided by actions/setup-java@v3 at the time of writing.
+                         See: No way to configure maven version in actions/setup-java #457
+                              at https://github.com/actions/setup-java/issues/457 -->
                     <version>3.8.8</version>
                   </requireMavenVersion>
                 </rules>
