@@ -83,6 +83,8 @@ Die `.jar`-Datei befindet sich anschließend im Verzeichnis `target`.
 
 Mit dem Befehl `java -jar target/java-template-0.1-SNAPSHOT.jar` können Sie Ihr Programm direkt aus dem JAR-Archiv starten.
 
+*Hinweis:* Der Name der `.jar`-Datei leitet sich aus dem in der `pom.xml`-Datei unter der Konfiguration `<artifactId>` hinterlegten Wert ab.
+
 ### Validieren
 
 Mit dem Befehl `mvn verify` können Sie Ihr Programm auf die Einhaltung der zuvor definierten Qualitätskriterien überprüfen. In diesem Projekt bedeutet dies die Ausführung von [Checkstyle](https://checkstyle.org), einem Werkzeug zur Überprüfung des Programmierstils von Java-Quellcode.
