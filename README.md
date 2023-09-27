@@ -4,7 +4,7 @@ Template für Programmierung in Java von [Professor Martin Burger](https://sesqa
 
 ## Benötigte Software
 
-Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuführen. Als IDE (Integrated Development Environment) empfehlen wir **Visual Studio Code**. Wenn Sie auf der Kommandozeile arbeiten möchten, empfehlen wir **Apache Maven**.
+Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuführen. Als IDE (Integrated Development Environment) empfehlen wir **Visual Studio Code**. Wenn Sie auf der [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile) arbeiten möchten, empfehlen wir **Apache Maven**.
 
 ### Programmiersprache Java
 
