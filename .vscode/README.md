@@ -6,4 +6,4 @@
 
 ## `settings.json`
 
-[Diese Datei](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) speichert die [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings).
+[Diese Datei](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) speichert die [Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings#_workspace-settings).
