@@ -1,0 +1,7 @@
+# Apache Maven Konfiguration
+
+[Dieser Ordner](https://maven.apache.org/configure.html#mvn-directory) enthält Dateien mit projektspezifischer Konfiguration für die Ausführung von Maven.
+
+## `jvm.config`
+
+[Diese Datei](https://maven.apache.org/configure.html#mvn-jvm-config-file) definiert die JVM Konfiguration. Sie setzt [Flags, die von Error Prone benötigt werden](https://errorprone.info/docs/installation#maven).
