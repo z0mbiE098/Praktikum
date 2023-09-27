@@ -8,7 +8,7 @@ Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuf
 
 ### Programmiersprache Java
 
-Eclipse Temurin, die OpenJDK-Distribution von Adoptium: <https://adoptium.net/de/>
+**Eclipse Temurin**, die OpenJDK-Distribution von Adoptium: <https://adoptium.net/de/>
 
 Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
 
@@ -21,7 +21,7 @@ OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode)
 
 ### Integrierte Entwicklungsumgebung (IDE)
 
-Visual Studio Code: <https://code.visualstudio.com>
+**Visual Studio Code**: <https://code.visualstudio.com>
 
 Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
 
@@ -34,7 +34,7 @@ arm64
 
 ### Build-Werkzeug auf der Kommandozeile [Optional]
 
-Apache Maven: <https://maven.apache.org>
+**Apache Maven**: <https://maven.apache.org>
 
 Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
 
