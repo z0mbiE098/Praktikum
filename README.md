@@ -34,7 +34,7 @@ abd2f3db4bdb28f9e95536dfa84d8479f1eb312d
 arm64
 ```
 
-### Build-Werkzeug auf der Kommandozeile [Optional]
+### Build-Werkzeug auf der Kommandozeile [Empfohlen]
 
 **Apache Maven**: <https://maven.apache.org>
 
