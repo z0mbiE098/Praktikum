@@ -19,6 +19,8 @@ OpenJDK Runtime Environment Temurin-20.0.2+9 (build 20.0.2+9)
 OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode)
 ```
 
+*Wichtig:* Stellen Sie sicher, dass Sie mindestens LTS (Long-Term Support) Version 17 installiert haben. Im obigen Beispiel ist die neuere Version 20 installiert.
+
 ### Integrierte Entwicklungsumgebung (IDE)
 
 **Visual Studio Code**: <https://code.visualstudio.com>
