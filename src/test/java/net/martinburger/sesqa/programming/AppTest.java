@@ -1,6 +1,7 @@
 package net.martinburger.sesqa.programming;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOutNormalized;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,12 +9,13 @@ import org.junit.jupiter.api.Test;
  * Unit test for simple App.
  */
 public class AppTest {
-  /**
-   * 'Rigorous' Test :-).
-   */
+
   @Test
-  public void shouldAnswerWithTrue() {
-    // TODO implement test that actually tests something
-    assertTrue(true);
+  void appShouldOutputHelloWorld() throws Exception {
+    String output = tapSystemOutNormalized(() -> {
+      App.main(null);
+    });
+    assertEquals("Hello World!\n", output);
   }
+
 }
