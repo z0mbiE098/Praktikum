@@ -1,3 +1,5 @@
 {
+    // How changes to the build files will update the Java classpath configuration:
+    // https://marketplace.visualstudio.com/items?itemName=redhat.java#supported-vs-code-settings
     "java.configuration.updateBuildConfiguration": "automatic"
 }
