@@ -1,6 +1,6 @@
 # Apache Maven Konfiguration
 
-[Dieser Ordner](https://maven.apache.org/configure.html#mvn-directory) enthält Dateien mit projektspezifischer Konfiguration für die Ausführung von Maven.
+[Dieser Ordner](https://maven.apache.org/configure.html#mvn-directory) enthält Dateien mit projektspezifischer Konfiguration für die Ausführung von [Maven](https://maven.apache.org).
 
 ## `jvm.config`
 
