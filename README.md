@@ -49,6 +49,8 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "13.6", arch: "aarch64", family: "mac"
 ```
 
+*Hinweis*: Details zu Maven finden Sie unter [`docs/Maven.md`](docs/Maven.md).
+
 ## Projekt- und Verzeichnisstruktur
 
 Dieses Projekt hat folgende Verzeichnisstruktur:
@@ -57,6 +59,8 @@ Dieses Projekt hat folgende Verzeichnisstruktur:
 sesqa-java-programming-template
 ├── .gitignore
 ├── README.md
+├── docs
+│   └── ...
 ├── pom.xml
 └── src
     ├── main
@@ -86,6 +90,10 @@ Die Datei **[`.gitignore`](https://git-scm.com/docs/gitignore)** legt fest, welc
 Bei der Datei **[`README.md`](https://docs.github.com/de/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)** handelt es sich um diese Datei.
 
 Die **[`pom.xml`](https://maven.apache.org/pom.html)** Datei ist eine XML Datei, die Informationen über das Projekt und Konfigurationsdetails enthält, die von Maven verwendet werden, um das Projekt zu bauen. Diese Informationen werden im sogenannten [Project Object Model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) (POM) dargestellt. Beim Ausführen eines Tasks oder Goals (zum Beispiel mit dem Befehl `mvn compile`) sucht Maven nach dieser Datei im aktuellen Verzeichnis. Maven liest daraus das POM, holt sich die benötigten Konfigurationsinformationen und führt dann den Befehl aus.
+
+### Verzeichnis `docs`
+
+Im Verzeichnis **`docs`** finden Sie weitere Dokumentation zur Benutzung dieses Projektes.
 
 ### Verzeichnis `src`
 
