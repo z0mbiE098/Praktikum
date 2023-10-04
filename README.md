@@ -45,7 +45,7 @@ Wir empfehlen ein Build-Werkzeug als Ergänzung zu einer IDE und unterstützen d
 
 **Die Installation von Maven ist optional.** Dieses Projekt verwendet den [Apache Maven Wrapper](https://maven.apache.org/wrapper/), der Maven bei Bedarf automatisch beim ersten Aufruf herunterlädt. Es ist daher nicht notwendig, Maven manuell zu installieren.
 
-*Hinweis*: Details zu Maven finden Sie unter [`docs/Maven.md`](docs/Maven.md).
+*Hinweis*: Details zu Maven und dessen Nutzung finden Sie unter [`docs/Maven.md`](docs/Maven.md).
 
 ## Projekt- und Verzeichnisstruktur
 
@@ -88,7 +88,7 @@ sesqa-java-programming-template
                             └── AppTest.java
 ```
 
-Die Verzeichnisse `.github`, `.idea` und `.mvn` enthalten eigene `README.md` Dateien, so dass diese hier im Folgenden nicht beschrieben sind.
+Die Verzeichnisse `.github`, `.idea` und `.mvn` enthalten eigene `README.md` Dateien und werden im Folgenden nicht beschrieben.
 
 ### Verzeichnis `.git`
 
@@ -125,7 +125,3 @@ Das Verzeichnis **[`src`](https://maven.apache.org/guides/introduction/introduct
 Der Java-Quellcode befindet sich in den beiden Verzeichnissen `src/main/java` und `src/test/java`. Die beiden darin enthaltenen Verzeichnisse `net/martinburger/sesqa/programming` definieren das [Java-Paket](https://dh-cologne.github.io/java-wegweiser/articles/Packages-package-und-import.html) `net.martinburger.sesqa.programming`.
 
 *Hinweis:* Maven erstellt beim Bauen ein Verzeichnis namens `target`. Dieses enthält alle Daten, die beim Bauen des Projekts automatisch erzeugt werden. Dazu gehören unter anderem die kompilierten Java-Klassen, das JAR-Archiv und die Webseite. Dieses Verzeichnis wird durch die Datei `.gitignore` von der Versionskontrolle ausgeschlossen.
-
-## Build-Werkzeug Apache Maven
-
-Sie können Maven auf der Kommandozeile verwenden, um das Softwareprojekt zu bauen. Details finden Sie unter [`docs/Maven.md`](docs/Maven.md).
