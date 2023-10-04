@@ -8,7 +8,7 @@ Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuf
 
 ### Programmiersprache Java
 
-Zur Entwicklung von Java-Programmen benötigen Sie ein Java Development Kit (JDK). Das JDK ist ein Softwarepaket, das Bibliotheken und Werkzeuge für die Entwicklung und den Test von Java-Anwendungen sowie für die Ausführung von Anwendungen auf der Java-Plattform enthält. Eine freie Version des offiziellen JDK der Firma Oracle ist unter dem Namen [OpenJDK](https://de.wikipedia.org/wiki/OpenJDK) verfügbar.
+Zur Entwicklung von Java-Programmen benötigen Sie ein **Java Development Kit** (JDK). Das JDK ist ein Softwarepaket, das Bibliotheken und Werkzeuge für die Entwicklung und den Test von Java-Anwendungen sowie für die Ausführung von Anwendungen auf der Java-Plattform enthält. Eine freie Version des offiziellen JDK der Firma Oracle ist unter dem Namen [OpenJDK](https://de.wikipedia.org/wiki/OpenJDK) verfügbar.
 
 Wir empfehlen und unterstützen **Eclipse Temurin**, die OpenJDK-Distribution der Community-Organisation Adoptium: <https://adoptium.net/de/>
 
@@ -25,7 +25,7 @@ OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode)
 
 ### Integrierte Entwicklungsumgebung
 
-Obwohl Sie den Quellcode Ihres Java-Programms mit jedem beliebigen Texteditor bearbeiten können, empfehlen wir Ihnen, eine integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) zu verwenden. Dabei handelt es sich um eine Softwareanwendung, die umfassende, auf die Softwareentwicklung spezialisierte Funktionalitäten bietet. Eine IDE besteht in der Regel mindestens aus einem Quellcode-Editor, Werkzeugen zur Build-Automatisierung und einem Debugger.
+Obwohl Sie den Quellcode Ihres Java-Programms mit jedem beliebigen Texteditor bearbeiten können, empfehlen wir Ihnen, eine **integrierte Entwicklungsumgebung** (Integrated Development Environment, IDE) zu verwenden. Dabei handelt es sich um eine Softwareanwendung, die umfassende, auf die Softwareentwicklung spezialisierte Funktionalitäten bietet. Eine IDE besteht in der Regel mindestens aus einem Quellcode-Editor, Werkzeugen zur Build-Automatisierung und einem Debugger.
 
 Wir empfehlen und unterstützen **IntelliJ IDEA**, eine auf Java spezialisierte IDE der Firma JetBrains: <https://www.jetbrains.com/idea/>
 
@@ -37,7 +37,7 @@ JetBrain bietet eine [kostenlose Lizenz für Bildungszwecke](https://www.jetbrai
 
 ### Build-Werkzeug auf der Kommandozeile
 
-Mit einer IDE wie IntelliJ IDEA können Sie Ihre Software mit Hilfe einer grafischen Benutzeroberfläche kompilieren, ausführen und testen. Auf der Kommandozeile können Sie diese Arbeitsschritte mit geeigneten Werkzeugen weiter vereinfachen und automatisieren. Mit einem solchen dedizierten Build-Werkzeug können Sie Ihre Arbeit wesentlich schneller und damit effizienter erledigen.
+Mit einer IDE wie IntelliJ IDEA können Sie Ihre Software über eine grafische Benutzeroberfläche kompilieren, ausführen und testen. Auf der Kommandozeile können Sie diese Arbeitsschritte mit geeigneten Werkzeugen weiter vereinfachen und automatisieren. Mit einem solchen dedizierten **Build-Werkzeug** können Sie Ihre Arbeit also wesentlich schneller und damit effizienter erledigen.
 
 Wir empfehlen ein Build-Werkzeug als Ergänzung zu einer IDE und unterstützen daher **Apache Maven**, ein entsprechendes Kommandozeilen-Werkzeug der Apache Software Foundation: <https://maven.apache.org>
 
