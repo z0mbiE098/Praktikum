@@ -12,7 +12,7 @@ Zur Entwicklung von Java-Programmen benötigen Sie ein **Java Development Kit** 
 
 Wir empfehlen und unterstützen **Eclipse Temurin**, die OpenJDK-Distribution der Community-Organisation Adoptium: <https://adoptium.net/de/>
 
-Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation:
+Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation von Temurin:
 
 ```shell
 ❯ java -version
@@ -43,7 +43,9 @@ Wir empfehlen ein Build-Werkzeug als Ergänzung zu einer IDE und unterstützen d
 
 *Tipp:* Mit IntelliJ IDEA können Sie auch [Maven-Projekte verwalten und ausführen](https://www.jetbrains.com/help/idea/maven-support.html). IntelliJ bietet ein [Tutorial zur Verwendung von Maven in der IDE](https://www.jetbrains.com/idea/guide/tutorials/working-with-maven/) an.
 
-Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation:
+**Die Installation von Maven ist optional.** Dieses Projekt verwendet den [Apache Maven Wrapper](https://maven.apache.org/wrapper/), der Maven bei Bedarf automatisch beim ersten Aufruf herunterlädt. Es ist daher nicht notwendig, Maven manuell zu installieren.
+
+Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation von Maven:
 
 ```shell
 ❯ mvn -v
@@ -62,10 +64,14 @@ Dieses Projekt hat folgende Verzeichnisstruktur:
 
 ```text
 sesqa-java-programming-template
+├── .git
 ├── .gitignore
+├── LICENSE
 ├── README.md
 ├── docs
 │   └── ...
+├── mvnw
+├── mvnw.cmd
 ├── pom.xml
 └── src
     ├── main
@@ -88,17 +94,33 @@ sesqa-java-programming-template
 
 Zusätzlich zu diesen Dateien und Verzeichnissen enthält das Projekt die Verzeichnisse `.github`, `.idea` und `.mvn`. Diese enthalten eigene `README.md` Dateien.
 
-### Dateien `.gitignore`, `README.md` und `pom.xml`
+### Verzeichnis `.git`
 
-Die Datei **[`.gitignore`](https://git-scm.com/docs/gitignore)** legt fest, welche Dateien und Verzeichnisse das [Versionsverwaltungswerkzeug](https://git-scm.com/book/de/v2/Erste-Schritte-Was-ist-Versionsverwaltung%3F) Git [ignorieren soll](https://docs.github.com/de/get-started/getting-started-with-git/ignoring-files). Diese werden von Git nicht automatisch hinzugefügt und auch nicht als "unversioniert" (engl. untracked) angezeigt. In der Regel handelt es sich dabei um automatisch generierte Dateien wie Logdateien oder Dateien, die von einem Build-Werkzeug wie Maven erzeugt werden.
+Das Verzeichnis **`.git`** enthält fast alles, was das [Versionsverwaltungswerkzeug Git](https://git-scm.com/book/de/v2/Erste-Schritte-Was-ist-Versionsverwaltung%3F) für die lokale Repository-Verwaltung speichert.
 
-Bei der Datei **[`README.md`](https://docs.github.com/de/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)** handelt es sich um diese Datei, die Sie gerade lesen.
+### Datei `.gitignore`
 
-Die **[`pom.xml`](https://maven.apache.org/pom.html)** Datei ist eine XML Datei, die Informationen über das Projekt und Konfigurationsdetails enthält, die von Maven verwendet werden, um das Projekt zu bauen. Diese Informationen werden im sogenannten [Project Object Model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) (POM) dargestellt. Beim Ausführen eines Tasks oder Goals (zum Beispiel mit dem Befehl `mvn compile`) sucht Maven nach dieser Datei im aktuellen Verzeichnis. Maven liest daraus das POM, holt sich die benötigten Konfigurationsinformationen und führt dann den Befehl aus.
+Die Datei **[`.gitignore`](https://git-scm.com/docs/gitignore)** legt fest, welche Dateien und Verzeichnisse Git [ignorieren soll](https://docs.github.com/de/get-started/getting-started-with-git/ignoring-files). Diese werden von Git nicht automatisch hinzugefügt und auch nicht als "unversioniert" (engl. untracked) angezeigt. In der Regel handelt es sich dabei um automatisch generierte Dateien wie Logdateien oder Dateien, die von einem Build-Werkzeug wie Maven erzeugt werden.
+
+### Datei `LICENSE`
+
+Die Datei **`LICENSE`** enthält die Lizenz, unter der dieses Projekt veröffentlicht wird.
+
+### Datei `README.md`
+
+Die Datei **[`README.md`](https://docs.github.com/de/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)** ist die Datei, die Sie gerade lesen.
 
 ### Verzeichnis `docs`
 
 Im Verzeichnis **`docs`** finden Sie weitere Dokumentation zur Benutzung dieses Projektes.
+
+### Dateien `mvnw` und `mvnw.cmd`
+
+Die Dateien **`mvnw`** und **`mvnw.cmd`** sind die Skripte, die der [Maven Wrapper](https://maven.apache.org/wrapper/) verwendet, um Maven bei Bedarf automatisch herunterzuladen. Maven selbst wird dann von diesen Skripten ausgeführt.
+
+### Datei `pom.xml`
+
+Die **[`pom.xml`](https://maven.apache.org/pom.html)** Datei ist eine XML Datei, die Informationen über das Projekt und Konfigurationsdetails enthält, die von Maven verwendet werden, um das Projekt zu bauen. Diese Informationen werden im sogenannten [Project Object Model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) (POM) dargestellt. Beim Ausführen eines Tasks oder Goals (zum Beispiel mit dem Befehl `mvn compile`) sucht Maven nach dieser Datei im aktuellen Verzeichnis. Maven liest daraus das POM, holt sich die benötigten Konfigurationsinformationen und führt dann den Befehl aus.
 
 ### Verzeichnis `src`
 
