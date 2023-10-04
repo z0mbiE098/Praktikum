@@ -45,17 +45,6 @@ Wir empfehlen ein Build-Werkzeug als Ergänzung zu einer IDE und unterstützen d
 
 **Die Installation von Maven ist optional.** Dieses Projekt verwendet den [Apache Maven Wrapper](https://maven.apache.org/wrapper/), der Maven bei Bedarf automatisch beim ersten Aufruf herunterlädt. Es ist daher nicht notwendig, Maven manuell zu installieren.
 
-Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation von Maven:
-
-```shell
-❯ mvn -v
-Apache Maven 3.9.4 (dfbb324ad4a7c8fb0bf182e6d91b0ae20e3d2dd9)
-Maven home: /opt/homebrew/Cellar/maven/3.9.4/libexec
-Java version: 20.0.2, vendor: Eclipse Adoptium, runtime: /Library/Java/JavaVirtualMachines/temurin-20.jdk/Contents/Home
-Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "13.6", arch: "aarch64", family: "mac"
-```
-
 *Hinweis*: Details zu Maven finden Sie unter [`docs/Maven.md`](docs/Maven.md).
 
 ## Projekt- und Verzeichnisstruktur
