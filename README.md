@@ -1,14 +1,16 @@
 # Java Programming Template { SESQA }
 
-Template für Programmierung in Java von [Professor Martin Burger](https://sesqa.martin-burger.net).
+Projektvorlage zur Programmierung in Java von [Professor Martin Burger](https://sesqa.martin-burger.net).
 
 ## Benötigte Software
 
-Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuführen. Als IDE (Integrated Development Environment) empfehlen wir **Visual Studio Code**. Wenn Sie auf der [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile) arbeiten möchten, empfehlen wir **Apache Maven**.
+Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuführen. Als integrierte Entwicklungsumgebung (IDE) empfehlen wir **IntelliJ IDEA**. Wenn Sie auch auf der [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile) arbeiten möchten, empfehlen wir **Apache Maven**.
 
 ### Programmiersprache Java
 
-**Eclipse Temurin**, die OpenJDK-Distribution von Adoptium: <https://adoptium.net/de/>
+Zur Entwicklung von Java-Programmen benötigen Sie ein Java Development Kit (JDK). Das JDK ist ein Softwarepaket, das Bibliotheken und Werkzeuge für die Entwicklung und den Test von Java-Anwendungen sowie für die Ausführung von Anwendungen auf der Java-Plattform enthält. Eine freie Version des offiziellen JDK der Firma Oracle ist unter dem Namen [OpenJDK](https://de.wikipedia.org/wiki/OpenJDK) verfügbar.
+
+Wir empfehlen und unterstützen **Eclipse Temurin**, die OpenJDK-Distribution der Community-Organisation Adoptium: <https://adoptium.net/de/>
 
 Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
 
@@ -19,24 +21,27 @@ OpenJDK Runtime Environment Temurin-20.0.2+9 (build 20.0.2+9)
 OpenJDK 64-Bit Server VM Temurin-20.0.2+9 (build 20.0.2+9, mixed mode)
 ```
 
-*Wichtig:* Stellen Sie sicher, dass Sie mindestens LTS (Long-Term Support) Version 17 installiert haben. Im obigen Beispiel ist die neuere Version 20 installiert.
+*Wichtig:* Stellen Sie sicher, dass Sie mindestens LTS (Long-Term Support) Version 17 installiert haben. Im obigen Beispiel ist die neuere Version 20 installiert, die wir empfehlen.
 
-### Integrierte Entwicklungsumgebung (IDE)
+### Integrierte Entwicklungsumgebung
 
-**Visual Studio Code**: <https://code.visualstudio.com>
+Obwohl Sie den Quellcode Ihres Java-Programms mit jedem beliebigen Texteditor bearbeiten können, empfehlen wir Ihnen, eine integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) zu verwenden. Dabei handelt es sich um eine Softwareanwendung, die umfassende, auf die Softwareentwicklung spezialisierte Funktionalitäten bietet. Eine IDE besteht in der Regel mindestens aus einem Quellcode-Editor, Werkzeugen zur Build-Automatisierung und einem Debugger.
 
-Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
+Wir empfehlen und unterstützen **IntelliJ IDEA**, eine auf Java spezialisierte IDE der Firma JetBrains: <https://www.jetbrains.com/idea/>
 
-```shell
-❯ code --version
-1.82.2
-abd2f3db4bdb28f9e95536dfa84d8479f1eb312d
-arm64
-```
+*Wichtig:* Stellen Sie sicher, dass Sie ein JDK installiert haben, bevor Sie IntelliJ IDEA installieren. Während Sie Java nicht installieren müssen, um IntelliJ IDEA auszuführen, benötigen Sie ein eigenständiges JDK, um Java-Anwendungen in der IDE zu entwickeln.
 
-### Build-Werkzeug auf der Kommandozeile [Empfohlen]
+JetBrain bietet eine [kostenlose Lizenz für Bildungszwecke](https://www.jetbrains.com/community/education/) an. Diese berechtigt zur Nutzung für nicht-kommerzielle Bildungszwecke und kann kostenlos verlängert werden, solange Sie Student:in oder Dozent:in sind.
 
-**Apache Maven**: <https://maven.apache.org>
+*Tipp:* Zu IntelliJ IDEA gibt es eine umfangreiche [Dokumentation](https://www.jetbrains.com/help/idea/getting-started.html) sowie zahlreiche [Tipps](https://www.jetbrains.com/idea/guide/tips/) und [Tutorials](https://www.jetbrains.com/idea/guide/tutorials/). Für Einsteiger:innen bieten sich zum Beispiel die Tutorials aus dem Themenbereich [Getting started with IntelliJ IDEA](https://www.jetbrains.com/idea/guide/tutorials/getting-started-intellij-idea/) an.
+
+### Build-Werkzeug auf der Kommandozeile
+
+Mit einer IDE wie IntelliJ IDEA können Sie Ihre Software mit Hilfe einer grafischen Benutzeroberfläche kompilieren, ausführen und testen. Auf der Kommandozeile können Sie diese Arbeiten mit geeigneten Werkzeugen wesentlich schneller und damit effizienter erledigen. Darüber hinaus kann ein dediziertes Build-Werkzeug viele Arbeitsschritte vereinfachen und automatisieren.
+
+Wir empfehlen ein solches Build-Werkzeug als Ergänzung zu einer IDE und unterstützen daher **Apache Maven**, ein entsprechendes Kommandozeilen-Werkzeug der Apache Software Foundation: <https://maven.apache.org>
+
+*Tipp:* Mit IntelliJ IDEA können Sie auch [Maven-Projekte verwalten und ausführen](https://www.jetbrains.com/help/idea/maven-support.html). IntelliJ bietet ein [Tutorial zur Verwendung von Maven in der IDE](https://www.jetbrains.com/idea/guide/tutorials/working-with-maven/) an.
 
 Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
 
@@ -81,13 +86,13 @@ sesqa-java-programming-template
                             └── AppTest.java
 ```
 
-Zusätzlich zu diesen Dateien und Verzeichnissen enthält das Projekt die Verzeichnisse `.github`, `.mvn` und `.vscode`. Diese enthalten eigene `README.md` Dateien.
+Zusätzlich zu diesen Dateien und Verzeichnissen enthält das Projekt die Verzeichnisse `.github`, `.idea` und `.mvn`. Diese enthalten eigene `README.md` Dateien.
 
 ### Dateien `.gitignore`, `README.md` und `pom.xml`
 
 Die Datei **[`.gitignore`](https://git-scm.com/docs/gitignore)** legt fest, welche Dateien und Verzeichnisse das [Versionsverwaltungswerkzeug](https://git-scm.com/book/de/v2/Erste-Schritte-Was-ist-Versionsverwaltung%3F) Git [ignorieren soll](https://docs.github.com/de/get-started/getting-started-with-git/ignoring-files). Diese werden von Git nicht automatisch hinzugefügt und auch nicht als "unversioniert" (engl. untracked) angezeigt. In der Regel handelt es sich dabei um automatisch generierte Dateien wie Logdateien oder Dateien, die von einem Build-Werkzeug wie Maven erzeugt werden.
 
-Bei der Datei **[`README.md`](https://docs.github.com/de/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)** handelt es sich um diese Datei.
+Bei der Datei **[`README.md`](https://docs.github.com/de/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)** handelt es sich um diese Datei, die Sie gerade lesen.
 
 Die **[`pom.xml`](https://maven.apache.org/pom.html)** Datei ist eine XML Datei, die Informationen über das Projekt und Konfigurationsdetails enthält, die von Maven verwendet werden, um das Projekt zu bauen. Diese Informationen werden im sogenannten [Project Object Model](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) (POM) dargestellt. Beim Ausführen eines Tasks oder Goals (zum Beispiel mit dem Befehl `mvn compile`) sucht Maven nach dieser Datei im aktuellen Verzeichnis. Maven liest daraus das POM, holt sich die benötigten Konfigurationsinformationen und führt dann den Befehl aus.
 
@@ -101,7 +106,7 @@ Das Verzeichnis **[`src`](https://maven.apache.org/guides/introduction/introduct
 
 Der Java-Quellcode befindet sich in den beiden Verzeichnissen `src/main/java` und `src/test/java`. Die beiden darin enthaltenen Verzeichnisse `net/martinburger/sesqa/programming` definieren das [Java-Paket](https://dh-cologne.github.io/java-wegweiser/articles/Packages-package-und-import.html) `net.martinburger.sesqa.programming`.
 
-*Hinweis:* Maven erstellt beim Bauen ein Verzeichnis namens `target`. Dieses enthält alle Daten, die beim Bauen des Projekts automatisch erzeugt werden. Dazu gehören unter anderem die kompilierten Java-Klassen, das JAR-Archiv und die Webseite. Dieses Verzeichnis wird durch die Datei .`.gitignore` von der Versionskontrolle ausgeschlossen.
+*Hinweis:* Maven erstellt beim Bauen ein Verzeichnis namens `target`. Dieses enthält alle Daten, die beim Bauen des Projekts automatisch erzeugt werden. Dazu gehören unter anderem die kompilierten Java-Klassen, das JAR-Archiv und die Webseite. Dieses Verzeichnis wird durch die Datei `.gitignore` von der Versionskontrolle ausgeschlossen.
 
 ## Build-Werkzeug Apache Maven
 
