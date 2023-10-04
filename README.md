@@ -54,7 +54,14 @@ Dieses Projekt hat folgende Verzeichnisstruktur:
 ```text
 sesqa-java-programming-template
 ├── .git
+│   └── ...
+├── .github
+│   └── ...
 ├── .gitignore
+├── .idea
+│   └── ...
+├── .mvn
+│   └── ...
 ├── LICENSE
 ├── README.md
 ├── docs
@@ -81,7 +88,7 @@ sesqa-java-programming-template
                             └── AppTest.java
 ```
 
-Zusätzlich zu diesen Dateien und Verzeichnissen enthält das Projekt die Verzeichnisse `.github`, `.idea` und `.mvn`. Diese enthalten eigene `README.md` Dateien.
+Die Verzeichnisse `.github`, `.idea` und `.mvn` enthalten eigene `README.md` Dateien, so dass diese hier im Folgenden nicht beschrieben sind.
 
 ### Verzeichnis `.git`
 
