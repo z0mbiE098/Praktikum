@@ -4,7 +4,7 @@ Projektvorlage zur Programmierung in Java von [Professor Martin Burger](https://
 
 ## Benötigte Software
 
-Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuführen. Als integrierte Entwicklungsumgebung (IDE) empfehlen wir **IntelliJ IDEA**. Wenn Sie auch auf der [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile) arbeiten möchten, empfehlen wir **Apache Maven**.
+Sie benötigen **Java**, um die Software zu übersetzen (kompilieren) und auszuführen. Als integrierte Entwicklungsumgebung (IDE) empfehlen wir **IntelliJ IDEA**. Wenn Sie auch auf der [`Kommandozeile`](https://de.wikipedia.org/wiki/Kommandozeile) arbeiten möchten, empfehlen wir **Apache Maven**.
 
 ### Programmiersprache Java
 
@@ -12,7 +12,7 @@ Zur Entwicklung von Java-Programmen benötigen Sie ein Java Development Kit (JDK
 
 Wir empfehlen und unterstützen **Eclipse Temurin**, die OpenJDK-Distribution der Community-Organisation Adoptium: <https://adoptium.net/de/>
 
-Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
+Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation:
 
 ```shell
 ❯ java -version
@@ -37,13 +37,13 @@ JetBrain bietet eine [kostenlose Lizenz für Bildungszwecke](https://www.jetbrai
 
 ### Build-Werkzeug auf der Kommandozeile
 
-Mit einer IDE wie IntelliJ IDEA können Sie Ihre Software mit Hilfe einer grafischen Benutzeroberfläche kompilieren, ausführen und testen. Auf der Kommandozeile können Sie diese Arbeiten mit geeigneten Werkzeugen wesentlich schneller und damit effizienter erledigen. Darüber hinaus kann ein dediziertes Build-Werkzeug viele Arbeitsschritte vereinfachen und automatisieren.
+Mit einer IDE wie IntelliJ IDEA können Sie Ihre Software mit Hilfe einer grafischen Benutzeroberfläche kompilieren, ausführen und testen. Auf der Kommandozeile können Sie diese Arbeitsschritte mit geeigneten Werkzeugen weiter vereinfachen und automatisieren. Mit einem solchen dedizierten Build-Werkzeug können Sie Ihre Arbeit wesentlich schneller und damit effizienter erledigen.
 
-Wir empfehlen ein solches Build-Werkzeug als Ergänzung zu einer IDE und unterstützen daher **Apache Maven**, ein entsprechendes Kommandozeilen-Werkzeug der Apache Software Foundation: <https://maven.apache.org>
+Wir empfehlen ein Build-Werkzeug als Ergänzung zu einer IDE und unterstützen daher **Apache Maven**, ein entsprechendes Kommandozeilen-Werkzeug der Apache Software Foundation: <https://maven.apache.org>
 
 *Tipp:* Mit IntelliJ IDEA können Sie auch [Maven-Projekte verwalten und ausführen](https://www.jetbrains.com/help/idea/maven-support.html). IntelliJ bietet ein [Tutorial zur Verwendung von Maven in der IDE](https://www.jetbrains.com/idea/guide/tutorials/working-with-maven/) an.
 
-Beispielhafte Ausgabe auf der `Kommandozeile` nach erfolgreicher Installation:
+Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation:
 
 ```shell
 ❯ mvn -v
@@ -110,4 +110,4 @@ Der Java-Quellcode befindet sich in den beiden Verzeichnissen `src/main/java` un
 
 ## Build-Werkzeug Apache Maven
 
-Sie können Maven auf der `Kommandozeile` verwenden, um das Softwareprojekt zu bauen. Details finden Sie unter [`docs/Maven.md`](docs/Maven.md).
+Sie können Maven auf der Kommandozeile verwenden, um das Softwareprojekt zu bauen. Details finden Sie unter [`docs/Maven.md`](docs/Maven.md).
