@@ -88,7 +88,7 @@ Mit dem Befehl `mvn verify` können Sie Ihr Programm auf die Einhaltung der zuvo
 
 ### Webseite
 
-Mit dem Befehl `mvn site` können Sie eine [Webseite generieren](https://maven.apache.org/guides/mini/guide-site.html), die verschiedene Berichte enthält. Dazu gehören [navigierbarer Quellcode](https://maven.apache.org/jxr/), Testergebnisse (jUnit), Checkstyle, [Codetags](https://stackoverflow.com/q/1452934/66981) und [Javadoc](https://openbook.rheinwerk-verlag.de/javainsel/23_004.html#u23.4).
+Mit dem Befehl `mvn site` können Sie eine [Webseite generieren](https://maven.apache.org/guides/mini/guide-site.html), die verschiedene Berichte enthält. Dazu gehören [navigierbarer Quellcode](https://maven.apache.org/jxr/), Testergebnisse (jUnit), [Testabdeckung](https://de.wikipedia.org/wiki/Testabdeckung) ([JaCoCo](https://www.jacoco.org/jacoco/)), Checkstyle, [Codetags](https://stackoverflow.com/q/1452934/66981) und [Javadoc](https://openbook.rheinwerk-verlag.de/javainsel/23_004.html#u23.4).
 
 Die Webseite befindet sich anschließend im Verzeichnis `target/site`. Um die Berichte dort anzusehen, öffnen Sie die Datei `target/site/index.html` in Ihrem Browser.
 
