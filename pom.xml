@@ -56,8 +56,8 @@
 
   <build>
     <plugins>
-        <!-- define required minimum version of Maven, see https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html -->
         <plugin>
+          <!-- define required minimum version of Maven, see https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>3.4.1</version>
@@ -81,6 +81,7 @@
           </executions>
         </plugin>
         <plugin>
+          <!-- define main class to execute, see http://www.mojohaus.org/exec-maven-plugin/usage.html -->
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>3.1.0</version>
@@ -96,6 +97,7 @@
           </configuration>
         </plugin>
         <plugin>
+          <!-- define Main-Class entry in the MANIFEST.MF of the executable JAR, see https://maven.apache.org/plugins-archives/maven-shade-plugin-2.1/examples/executable-jar.html -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-shade-plugin</artifactId>
           <version>3.5.1</version>
@@ -116,6 +118,7 @@
           </executions>
         </plugin>
         <plugin>
+          <!-- generate Checkstyle reports, see https://maven.apache.org/plugins/maven-checkstyle-plugin/ -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>3.3.0</version>
@@ -142,6 +145,7 @@
           </executions>
         </plugin>
         <plugin>
+          <!-- add Error Prone checks to Java compilation, see https://errorprone.info/docs/installation -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
