@@ -12,6 +12,8 @@ Zur Entwicklung von Java-Programmen benötigen Sie ein **Java Development Kit** 
 
 Wir empfehlen und unterstützen **Eclipse Temurin**, die OpenJDK-Distribution der Community-Organisation Adoptium: <https://adoptium.net/de/>
 
+*Tipp:* Informationen zu den Vor- und Nachteilen verschiedener JDKs finden Sie auf der Website [Which Version of JDK Should I Use?](https://whichjdk.com)
+
 Beispielhafte Ausgabe auf der Kommandozeile nach erfolgreicher Installation von Temurin:
 
 ```shell
