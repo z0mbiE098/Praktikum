@@ -12,9 +12,7 @@ public class AppTest {
 
   @Test
   void appShouldOutputHelloWorld() throws Exception {
-    String output = tapSystemOutNormalized(() -> {
-      App.main(null);
-    });
+    String output = tapSystemOutNormalized(() -> App.main(null));
     assertEquals("Hello World!\n", output);
   }
 
