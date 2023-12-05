@@ -218,7 +218,7 @@
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>4.0.0-M11</version>
+          <version>4.0.0-M12</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -230,7 +230,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.5</version>
+        <version>3.5.0</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -344,7 +344,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.6.2</version>
+        <version>3.6.3</version>
         <reportSets>
           <reportSet>
             <id>default</id>
