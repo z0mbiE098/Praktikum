@@ -30,23 +30,15 @@ public class TextInterface {
     }
 
     public void gameMenu() {
-        System.out.println("==== GAME MENU ====");
+        System.out.println("\n==== GAME MENU ====");
         System.out.println("1. BUY\n2. SELL\n3. FEED\n4. PLANT\n5. SHOW STATUS\n6. QUIT GAME");
         System.out.println("Please select an action");
         int eingabe = gh.getUserInput();
         switch (eingabe) {
-            case 1:
-                landKauf();
-                break;
-            case 2:
-                landVerkauf();
-                break;
-            case 3:
-                city.feed(1000);
-                break;
-            case 4:
-                city.plant(20);
-                break;
+            case 1: buyMenu(); break;
+            case 2: sellMenu(); break;
+            case 3: feedMenu(); break;
+            case 4: plantMenu(); break;
             case 5:
                 city.tostring();
                 break;
@@ -59,18 +51,29 @@ public class TextInterface {
         }
     }
 
-    public void landKauf(){
+    public
+    void buyMenu(){
         gh.buyStatus();
         int eingabe = gh.getUserInput();
         System.out.println("You bought "+eingabe+" acres.");
         System.out.println("New Status: " +city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents");
     }
 
-    public void landVerkauf(){
+    public void sellMenu(){
         gh.sellStatus();
         int eingabe = gh.getUserInput();
         System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
     }
 
-    public void
+    public void feedMenu(){
+        gh.feedStatus();
+        int eingabe = gh.getUserInput();
+        System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+    }
+
+    public void plantMenu(){
+        gh.plantStatus();
+        int eingabe = gh.getUserInput();
+        System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+    }
 }

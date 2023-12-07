@@ -78,7 +78,6 @@ public class City {
     }
 
     public boolean sell(int acresToSell) {
-        int sellCostPerAcre = random.nextInt(10) + 17;
         if (acresToSell <= this.totalAcres) {
             this.totalAcres -= acresToSell;
             this.totalBushels += acresToSell * sellCostPerAcre;
