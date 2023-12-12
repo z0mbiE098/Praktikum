@@ -53,27 +53,64 @@ public class TextInterface {
 
     public
     void buyMenu(){
-        gh.buyStatus();
-        int eingabe = gh.getUserInput();
+        System.out.println("\n====BUY MENU====");
+        System.out.println("City Status: "+ city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople() + " residents.");
+        System.out.println("Current price per Acres: " +city.getBuyCostPerAcre());
+       int eingabe;
+        do {
+            System.out.println("How many acres would you like to buy?");
+            System.out.print("> ");
+            eingabe = gh.getUserInput();
+        } while (!city.buy(eingabe));
         System.out.println("You bought "+eingabe+" acres.");
         System.out.println("New Status: " +city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents");
+        gameMenu();
     }
 
     public void sellMenu(){
-        gh.sellStatus();
-        int eingabe = gh.getUserInput();
+        System.out.println("\n====SELL MENU====");
+        System.out.println("City Status: "+ city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople() + " residents.");
+        System.out.println("Current price per Acres: "+city.getSellCostPerAcre());
+        System.out.println("How many acres would you like to sell?");
+        System.out.print("> ");
+        int eingabe;
+        do {
+            System.out.println("How many acres would you like to sell?");
+            System.out.print("> ");
+            eingabe = gh.getUserInput();
+        } while (!city.sell(eingabe));
         System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+        gameMenu();
     }
 
     public void feedMenu(){
-        gh.feedStatus();
-        int eingabe = gh.getUserInput();
+        System.out.println("\n====Feed MENU====");
+        System.out.println("City Status: "+city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents.");
+        int eingabe;
+        do {
+            System.out.println("How many bushels do you wish to feed your residents?");
+            System.out.print("> ");
+            eingabe = gh.getUserInput();
+        } while (!city.feed(eingabe));
         System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+        gameMenu();
     }
 
     public void plantMenu(){
-        gh.plantStatus();
-        int eingabe = gh.getUserInput();
+        System.out.println("\n====PLANT MENU====");
+        System.out.println("City Status: "+city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents.");
+        int eingabe;
+        do {
+            System.out.println("How many acres of Land do you wish to plant with seed?");
+            System.out.print("> ");
+            eingabe = gh.getUserInput();
+        } while (!city.plant(eingabe));
         System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+        gameMenu();
+    }
+
+    public void status(){
+        System.out.println("====STATUS MENU====");
+        System.out.println("City Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
     }
 }

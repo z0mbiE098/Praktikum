@@ -66,42 +66,48 @@ public class City {
         this.sellCostPerAcre = random.nextInt(10) + 17;
     }
 
-    public boolean buy(int acresToBuy) {
-        if (acresToBuy * buyCostPerAcre < this.totalBushels) {
-            this.totalAcres += acresToBuy;
-            this.totalBushels -= buyCostPerAcre * acresToBuy;
-            System.out.println(this.totalAcres + " " + this.totalBushels);
-            return true;
-        } else {
+   public boolean buy(int acresToBuy) {
+        while (acresToBuy * buyCostPerAcre >= this.totalBushels) {
+            System.out.println("Not enough bushels! Please try again.");
             return false;
         }
+
+        this.totalAcres += acresToBuy;
+        this.totalBushels -= buyCostPerAcre * acresToBuy;
+        return true;
+    }
+    
+    public boolean sell(int acresToSell){
+       while(acresToSell > this.totalAcres){
+           System.out.println("Not enough Acres to sell! Please try again. ");
+           return false;
+       }
+       this.totalAcres -= acresToSell;
+        this.totalBushels += acresToSell * sellCostPerAcre;
+       return true;
     }
 
-    public boolean sell(int acresToSell) {
-        if (acresToSell <= this.totalAcres) {
-            this.totalAcres -= acresToSell;
-            this.totalBushels += acresToSell * sellCostPerAcre;
-            return true;
-        } else {
+    public boolean feed(int bushelsToFeed){
+        while(bushelsToFeed > totalBushels){
+            System.out.println("Please try again. ");
             return false;
         }
-    }
-
-    public boolean feed(int bushelsToFeed) {
-        if (bushelsToFeed <= totalBushels) {
-            this.totalBushels -= bushelsToFeed;
-            return true;
-        } else {
-            return false;
-        }
+        this.totalBushels -= bushelsToFeed;
+        return true;
     }
 
     public boolean plant(int acresToPlant) {
-        if (acresToPlant <= this.totalAcres && acresToPlant <= this.totalBushels && this.totalPeople <= acresToPlant) {
+     /*   if (acresToPlant <= this.totalAcres && acresToPlant <= this.totalBushels && this.totalPeople <= acresToPlant) {
             this.totalBushels -= acresToPlant;
             return true;
         }
-        return false;
+        return false;*/
+        while (acresToPlant > this.totalAcres && acresToPlant > this.totalBushels && this.totalPeople > acresToPlant){
+            System.out.println("Please try again: ");
+            return false;
+        }
+        this.totalBushels -= acresToPlant;
+        return true;
     }
 
     public void tostring() {

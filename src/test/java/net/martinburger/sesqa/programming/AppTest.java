@@ -12,7 +12,7 @@ public class AppTest {
 
   @Test
   void appShouldOutputHelloWorld() throws Exception {
-    /*TextInterface tx = new TextInterface();
+   /* TextInterface tx = new TextInterface();
     assertEquals(tx.mainMenu(), true);*/
   }
 
