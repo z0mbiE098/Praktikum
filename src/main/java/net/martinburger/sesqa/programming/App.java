@@ -13,7 +13,7 @@ public final class App {
   }
 
   public static void main(final String[] args) {
-    TextInterface tx = new TextInterface();
-    tx.mainMenu();
+    Game g = new Game();
+    g.startGame();
   }
 }

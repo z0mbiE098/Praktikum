@@ -63,8 +63,8 @@ public class TextInterface {
             eingabe = gh.getUserInput();
         } while (!city.buy(eingabe));
         System.out.println("You bought "+eingabe+" acres.");
-        System.out.println("New Status: " +city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents");
-        gameMenu();
+  //      System.out.println("New Status: " +city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents");
+        sellMenu();
     }
 
     public void sellMenu(){
@@ -79,8 +79,8 @@ public class TextInterface {
             System.out.print("> ");
             eingabe = gh.getUserInput();
         } while (!city.sell(eingabe));
-        System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
-        gameMenu();
+      //  System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+        feedMenu();
     }
 
     public void feedMenu(){
@@ -88,12 +88,12 @@ public class TextInterface {
         System.out.println("City Status: "+city.getTotalAcres() +" acres of land, "+city.getTotalBushels()+" bushels of grain, "+city.getTotalPeople()+" residents.");
         int eingabe;
         do {
-            System.out.println("How many bushels do you wish to feed your residents?");
+            System.out.println("How many bushels do you wish to feed your residents?\n20 per person required!");
             System.out.print("> ");
             eingabe = gh.getUserInput();
         } while (!city.feed(eingabe));
-        System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
-        gameMenu();
+       // System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+        plantMenu();
     }
 
     public void plantMenu(){
@@ -105,8 +105,8 @@ public class TextInterface {
             System.out.print("> ");
             eingabe = gh.getUserInput();
         } while (!city.plant(eingabe));
-        System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
-        gameMenu();
+           // System.out.println("New Status: "+city.getTotalAcres() + " acres of land, "+city.getTotalBushels() +" bushels of grain, "+city.getTotalPeople()+" residents.");
+        status();
     }
 
     public void status(){
